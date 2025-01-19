@@ -4,7 +4,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class MetodosCRUD {
+public class LoginRegister {
     public boolean verificacion(String correo, String telefono) {
         String query = "SELECT COUNT(*) FROM usuarios WHERE correo = ? OR telefono = ?";
         try (Connection con = Conexion.conectar();

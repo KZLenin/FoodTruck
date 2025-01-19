@@ -113,7 +113,7 @@ public class RegisterForm {
                 String correo = txtEmail.getText();
                 String contraseña = new String(pswContra.getPassword());
 
-                MetodosCRUD crud = new MetodosCRUD();
+                LoginRegister crud = new LoginRegister();
 
                 if (crud.verificacion(correo, telefono)) {
                     JOptionPane.showMessageDialog(frame,

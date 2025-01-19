@@ -68,7 +68,7 @@ public class LoginForm {
                 String correo = txtEmail.getText();
                 String password = new String(pswContra.getPassword()); // Obtener la contraseña como String
 
-                MetodosCRUD crud = new MetodosCRUD();
+                LoginRegister crud = new LoginRegister();
 
                 // Verificar si es admin
                 if (correo.equals("admin") && password.equals("admin1234")) {
