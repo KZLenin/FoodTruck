@@ -90,7 +90,7 @@ public class LoginForm {
                                 JOptionPane.INFORMATION_MESSAGE);
 
                         // Cambiar al formulario de Usuario
-                        frame.setContentPane(new UserForm(frame).userPanel);
+                        frame.setContentPane(new OrderForm(frame).userPanel);
                         frame.revalidate();
                         frame.repaint();
                     } else {
