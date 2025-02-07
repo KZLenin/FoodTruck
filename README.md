@@ -28,3 +28,6 @@ FoodTrack es una aplicación moderna y eficiente para la gestión de restaurante
 - Para ingresar al rol de ***admin***, el **correo** es `admin` y la **contraseña** es `admin1234`.
 - Para ingresar al rol de ***rider***, el **correo** es `rider` y la **contraseña** es `rider1234`.
 
+## 📖 Manual de Usuario  
+
+Mira el video tutorial aquí 👉 [Manual de Usuario](https://youtu.be/pkP3OUKzips)
