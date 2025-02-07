@@ -35,17 +35,15 @@ Mira el video tutorial aquí 👉 [Manual de Usuario](https://youtu.be/pkP3OUKzi
 ## 📸 Capturas de Pantalla
 
 ### 🏠 Pantalla de Login
-![Pantalla de Login](![image](https://github.com/user-attachments/assets/edd7ebd5-4ed8-4e3d-83e4-1b3d0f103d5b)
-)
+![image](https://github.com/user-attachments/assets/edd7ebd5-4ed8-4e3d-83e4-1b3d0f103d5b)
+
 
 ### 🏠 Pantalla de Registro
-![Pantalla de Registro](![image](https://github.com/user-attachments/assets/e26ddec8-5cfc-466c-8b81-aeb548f78ff0)
-)
-)
+![image](https://github.com/user-attachments/assets/e26ddec8-5cfc-466c-8b81-aeb548f78ff0)
 
 ### 👸 Pantalla de Admin
-![Pantalla de Admin](![image](https://github.com/user-attachments/assets/026ce966-2264-482d-98d8-4d0ad08c9d1d)
-)
+![image](https://github.com/user-attachments/assets/026ce966-2264-482d-98d8-4d0ad08c9d1d)
+
 
 ### 🍔 Pantalla de Productos
-![Pantalla de Admin](![image](https://github.com/user-attachments/assets/1230587c-1e58-4049-9aa3-126df0a0ccf9))
+![image](https://github.com/user-attachments/assets/1230587c-1e58-4049-9aa3-126df0a0ccf9)
