@@ -66,41 +66,34 @@ public class LoginForm {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String correo = txtEmail.getText();
-                String password = new String(pswContra.getPassword()); // Obtener la contraseña como String
+                String password = new String(pswContra.getPassword());
 
                 LoginRegister crud = new LoginRegister();
 
                 // Verificar si es admin
                 if (correo.equals("admin") && password.equals("admin1234")) {
-                    JOptionPane.showMessageDialog(frame,
-                            "Acceso como Administrador",
-                            "Bienvenido",
-                            JOptionPane.INFORMATION_MESSAGE);
-
-                    // Cambiar al formulario de Admin
+                    JOptionPane.showMessageDialog(frame, "Acceso como Administrador", "Bienvenido", JOptionPane.INFORMATION_MESSAGE);
                     frame.setContentPane(new AdminForm(frame).adminPanel);
-                    frame.revalidate();
-                    frame.repaint();
+                } else if (correo.equals("rider") && password.equals("rider1234")) {
+                    JOptionPane.showMessageDialog(frame, "Acceso como Repartidor", "Bienvenido", JOptionPane.INFORMATION_MESSAGE);
+                    frame.setContentPane(new RiderForm(frame).riderPanel);
                 } else {
                     // Verificar con la base de datos para usuarios regulares
-                    if (crud.loginUsuario(correo, password)) {
-                        JOptionPane.showMessageDialog(frame,
-                                "Acceso como Usuario",
-                                "Bienvenido",
-                                JOptionPane.INFORMATION_MESSAGE);
+                    int userId = crud.loginUsuario(correo, password);
 
-                        // Cambiar al formulario de Usuario
+                    if (userId != -1) {
+                        JOptionPane.showMessageDialog(frame, "Acceso como Usuario", "Bienvenido", JOptionPane.INFORMATION_MESSAGE);
+
+                        // Guardar el userId en la sesión (puedes crear una clase `SessionManager` para esto)
+                        SessionManager.setUserId(userId);
+
                         frame.setContentPane(new OrderForm(frame).userPanel);
-                        frame.revalidate();
-                        frame.repaint();
                     } else {
-                        // Mostrar mensaje de error si no se encuentran las credenciales
-                        JOptionPane.showMessageDialog(frame,
-                                "Correo o Contraseña incorrectos.",
-                                "Error de Login",
-                                JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(frame, "Correo o Contraseña incorrectos.", "Error de Login", JOptionPane.ERROR_MESSAGE);
                     }
                 }
+                frame.revalidate();
+                frame.repaint();
             }
         });
     }

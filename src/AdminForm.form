@@ -38,12 +38,12 @@
           <text value="Editar Productos"/>
         </properties>
       </component>
-      <component id="7929f" class="javax.swing.JButton" binding="btnStades">
+      <component id="7929f" class="javax.swing.JButton" binding="btnOrders">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Ver Estados"/>
+          <text value="Ver Ordenes"/>
         </properties>
       </component>
       <component id="d1de1" class="javax.swing.JButton" binding="btnReports">

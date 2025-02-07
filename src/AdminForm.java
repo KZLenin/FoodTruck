@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 public class AdminForm {
     public JPanel adminPanel;
     private JButton btnEdit;
-    private JButton btnStades;
+    private JButton btnOrders;
     private JButton btnReports;
     private JButton btnAdd;
     private JButton btnSignOut;
@@ -35,10 +35,10 @@ public class AdminForm {
                 frame.repaint();
             }
         });
-        btnStades.addActionListener(new ActionListener() {
+        btnOrders.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                frame.setContentPane(new StadesForm(frame).stadePanel);
+                frame.setContentPane(new OrdersAdmForm(frame).orderAdmPanel);
                 frame.revalidate();
                 frame.repaint();
             }
