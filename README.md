@@ -47,3 +47,6 @@ Mira el video tutorial aquí 👉 [Manual de Usuario](https://youtu.be/pkP3OUKzi
 
 ### 🍔 Pantalla de Productos
 ![image](https://github.com/user-attachments/assets/1230587c-1e58-4049-9aa3-126df0a0ccf9)
+
+## 🗄️ Estructura base de Datos
+![image](https://github.com/user-attachments/assets/08246b40-dcdd-4469-8125-c0a452e5f536)
